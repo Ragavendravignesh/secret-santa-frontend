@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <Layout title={'Secret santa magical world'}>
       <div className={styles.overlay}>
-        <h1 className={styles.content}>The world is not a wish granting factory!</h1>
+        <h1 className={styles.content}>
+        &#8220;The world is not a wish granting factory!&#8221;
+        </h1>
       </div>
     </Layout>
   )
