@@ -6,11 +6,11 @@
     padding: 1rem 0;
     background-color: #ff0000;
     color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     height: 80px;
     align-items: center;
     padding: 0 30px;
     font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo {
