@@ -3,7 +3,7 @@ import Footer from '../components/Footer'
 import Head from 'next/head'
 import styles from '../styles/Layout.module.css'
 
-export default function Layout({ children, title, description, keywords }) {
+export default function Layout({ children, title, description, keywords}) {
   return (
     <div>
       <Head>
