@@ -1,0 +1,63 @@
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 10rem auto;
+  max-width: 300px;
+  padding: 1rem;
+  background-color: #ff0000;
+  border-radius: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  color: white;
+  font-size: 6em;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.form [type='email'],
+.form [type='password'] {
+  display: flex;
+  padding: 0.6rem;
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.form [type='email']::placeholder,
+.form [type='password']::placeholder {
+  color: white;
+}
+
+.authBtn {
+  display: flex;
+  margin: 2rem auto 0.1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  color: #ff0000;
+  border: none;
+  cursor: pointer;
+  transition-delay: 1s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.authBtn:hover {
+  background-color: antiquewhite;
+}
