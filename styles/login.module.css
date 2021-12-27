@@ -26,6 +26,7 @@
   margin-top: 1.2rem;
 }
 
+.form [type='text'],
 .form [type='email'],
 .form [type='password'] {
   display: flex;
@@ -38,6 +39,7 @@
   border-bottom: 1px solid white;
 }
 
+.form [type='text']::placeholder, 
 .form [type='email']::placeholder,
 .form [type='password']::placeholder {
   color: white;
