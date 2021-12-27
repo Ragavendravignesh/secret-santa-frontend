@@ -11,12 +11,12 @@
   font-size: 2.5rem;
 }
 
-.red-text {
+.redText {
   display: inline;
   color: #ff0000;
   font-size: 3rem;
 }
 
 .content {
-  margin-top: 0.1rem;
+  margin: 0.1rem 1rem;
 }
