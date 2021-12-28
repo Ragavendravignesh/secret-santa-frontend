@@ -1,42 +1,53 @@
-import styles from '@styles/Header.module.css';
+import styles from '@styles/Header.module.css'
 import Link from 'next/link'
-import {useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 export default function Header() {
-    const [user, setUser] = useState(false);
-    const route = useRouter();
+  const [user, setUser] = useState(false)
+  const route = useRouter()
 
-    useEffect(() => {
-        const value = localStorage.getItem('user');
-        const data = value && JSON.parse(value)
+  useEffect(() => {
+    const value = localStorage.getItem('user')
+    const data = value && JSON.parse(value)
 
-        setUser(data);
-    }, [])
-    
-    const logout = () => {
-        localStorage.removeItem('user');
-        setUser('');
-        route.push('/')
-    }
+    setUser(data)
+  }, [])
 
-    return <div className={styles.header}>
-        <div className={styles.logo}>
-            <Link href="/">
-                <a>Secret santa</a>
-            </Link>
-        </div>
+  const logout = () => {
+    localStorage.removeItem('user')
+    setUser('')
+    route.push('/')
+  }
 
-        <nav>
-            <ul className={styles.elements}>
-                {user ? <li onClick={logout}>Logout</li> : (
-                    <li>
-                       <Link href='/login'>
-                           <a>Login</a>
-                       </Link>
-                    </li>
-                ) }
-            </ul>
-        </nav>
+  return (
+    <div className={styles.header}>
+      <div className={styles.logo}>
+        <Link href='/'>
+          <a>Secret santa</a>
+        </Link>
+      </div>
+
+      <nav>
+        <ul className={styles.elements}>
+          {user ? (
+            <li onClick={logout}>Logout</li>
+          ) : (
+            <>
+              <li>
+                <Link href='/postWish'>
+                  <a>Post wish</a>
+                </Link>
+              </li>
+              <li>
+                <Link href='/login'>
+                  <a>Login</a>
+                </Link>
+              </li>
+            </>
+          )}
+        </ul>
+      </nav>
     </div>
+  )
 }
