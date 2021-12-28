@@ -1,10 +1,10 @@
-import styles from '../styles/Header.module.css';
+import styles from '@styles/Header.module.css';
 import Link from 'next/link'
 import {useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 export default function Header() {
-    const [user, setUser] = useState('');
+    const [user, setUser] = useState(false);
     const route = useRouter();
 
     useEffect(() => {
@@ -12,8 +12,8 @@ export default function Header() {
         const data = value && JSON.parse(value)
 
         setUser(data);
-    }, []) 
-
+    }, [])
+    
     const logout = () => {
         localStorage.removeItem('user');
         setUser('');
