@@ -54,7 +54,7 @@ export default function LoginPage() {
           <FaHandHoldingHeart />
         </div>
         <div className={styles.form}>
-          <form onSubmit={handleSubmit}>
+          <form>
             <input
               type='email'
               placeholder='Email'
@@ -66,7 +66,7 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
             />
 
-            <input type='submit' value='Login' className={styles.authBtn} onClick={handleSubmit}/>
+            <button type='button' className={styles.authBtn} onClick={handleSubmit}>Login</button>
           </form>
         </div>
       </div>

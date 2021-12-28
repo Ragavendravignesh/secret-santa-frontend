@@ -60,7 +60,7 @@ export default function RegisterPage() {
           <FaFingerprint />
         </div>
         <div className={styles.form}>
-          <form onSubmit={handleSubmit}>
+          <form>
             <input
               type='text'
               placeholder='Username'
@@ -81,7 +81,7 @@ export default function RegisterPage() {
               placeholder='Confirm password'
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
-            <input type='submit' value='Register' className={styles.authBtn} onClick={handleSubmit}/>
+            <button type='button' className={styles.authBtn} onClick={handleSubmit}>Register</button>
           </form>
         </div>
       </div>

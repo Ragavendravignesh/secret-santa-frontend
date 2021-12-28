@@ -68,7 +68,7 @@ export default function PostWish() {
     <Layout title={'Post your wish | Secret Santa'}>
       <ToastContainer />
       <div className={styles.postForm}>
-        <form onSubmit={handleSubmit}>
+        <form>
           <div className={styles.formControl}>
             <label htmlFor='wish'>Wish</label>
             <input
@@ -111,7 +111,7 @@ export default function PostWish() {
             />
           </div>
 
-          <input type='submit' className={styles.postWishBtn} value='Submit' onClick={handleSubmit}/>
+          <button type='button' className={styles.postWishBtn} onClick={handleSubmit}>Submit</button>
         </form>
       </div>
     </Layout>
