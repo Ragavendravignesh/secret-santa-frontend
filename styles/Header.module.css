@@ -24,6 +24,7 @@
 
 .elements li {
   margin-left: 0.5rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

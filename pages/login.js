@@ -36,7 +36,7 @@ export default function LoginPage() {
 
     if (res.ok) {
       resetFields()
-      localStorage.setItem('user', JSON.stringify(user))
+      sessionStorage.setItem('user', JSON.stringify(user))
       route.push('/wishBoard')
     } else {
       toast.error(user.message[0].messages[0].message)
