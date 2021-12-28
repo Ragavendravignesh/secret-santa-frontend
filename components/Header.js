@@ -9,14 +9,14 @@ export default function Header() {
   const route = useRouter()
 
   useEffect(() => {
-    const value = localStorage.getItem('user')
+    const value = sessionStorage.getItem('user')
     const data = value && JSON.parse(value)
 
     setUser(data)
   }, [])
 
   const logout = () => {
-    localStorage.removeItem('user')
+    sessionStorage.removeItem('user')
     setUser('')
     route.push('/')
   }

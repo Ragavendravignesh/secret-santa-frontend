@@ -21,7 +21,7 @@ export default function PostWish() {
   }
 
   const getToken = () => {
-    const data = localStorage.getItem('user')
+    const data = sessionStorage.getItem('user')
     const value = JSON.parse(data)
     return value.jwt
   }
