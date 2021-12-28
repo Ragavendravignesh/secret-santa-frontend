@@ -45,7 +45,7 @@ export default function RegisterPage() {
 
     if (res.ok) {
       resetFields()
-      sessionStorage.setItem('user', JSON.stringify(user))
+      localStorage.setItem('user', JSON.stringify(user))
       route.push('/wishBoard')
     } else {
       toast.error(user.message[0].messages[0].message)
