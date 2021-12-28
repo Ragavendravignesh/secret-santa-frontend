@@ -8,13 +8,13 @@ export default function Pagination({ page, total }) {
       <div className={styles.pagination}>
       {page > 1 && (
         <Link href={`/wishBoard?page=${page - 1}`}>
-          <a className='btn-secondary'><span><FaLessThan/>Prev</span></a>
+          <a className='btn-secondary'><span className='ltIcon'><FaLessThan/>Prev</span></a>
         </Link>
       )}
 
       {page < total && (
         <Link href={`/wishBoard?page=${page + 1}`}>
-          <a className='btn-secondary'><span><FaGreaterThan/>Next</span></a>
+          <a className='btn-secondary'><span className='gtIcon'><FaGreaterThan/>Next</span></a>
         </Link>
       )}
       </div>
