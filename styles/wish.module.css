@@ -1,0 +1,55 @@
+.wishCard {
+  padding: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  border-bottom: 5px solid #ff0000;
+  display: grid;
+  grid-template-columns: 4fr 0.3fr;
+  flex: 4 2;
+  max-width: 60rem;
+  min-height: 80vh;
+  border-radius: 0.3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.contentRow {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .wishCard {
+    margin: 1rem 2rem;
+    padding: 1rem;
+    grid-template-rows: 4fr 1fr;
+    grid-template-columns: 4fr;
+  }
+
+  .logo{
+      margin: auto;
+  } 
+
+  .contentRow {
+    display: grid;
+    grid-template-columns: 2fr;
+    font-size: 1rem;
+  }
+}
