@@ -46,13 +46,11 @@
 }
 
 .authBtn {
-  display: flex;
   margin: 2rem auto 0.2rem;
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
   background-color: white;
   color: #ff0000;
-  border: none;
   cursor: pointer;
   transition: all 0.5s;
   font-size: 1rem;
