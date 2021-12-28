@@ -9,7 +9,7 @@ export default function PageNotFound() {
           <span className={styles.redText}>404</span> Not found
         </h1>
         <h4 className={styles.content}>
-          Sorry, at the moment we couln't find the page you are looking for.
+          {"Sorry, at the moment we couln\'t find the page you are looking for."}
         </h4>
       </div>
     </Layout>

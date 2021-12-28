@@ -6,7 +6,6 @@
   border-bottom: 5px solid #ff0000;
   display: grid;
   grid-template-columns: 4fr 0.3fr;
-  flex: 4 2;
   max-width: 60rem;
   min-height: 80vh;
   border-radius: 0.3rem;
@@ -27,12 +26,12 @@
 .contentRow {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 0.6rem;
 }
 
 .boldText {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -44,7 +43,7 @@
   }
 
   .logo{
-      margin: auto;
+    margin: auto;
   } 
 
   .contentRow {

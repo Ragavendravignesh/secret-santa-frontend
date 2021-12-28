@@ -4,7 +4,7 @@ import styles from '../styles/wishlist.module.css'
 import Pagination from '../components/Pagination'
 import WishItem from '@components/WishItem'
 
-export default function wishBoard({ data, total, page }) {
+export default function WishBoard({ data, total, page }) {
   return (
     <Layout title={'Wishes Page | Secret santa'}>
       <div className={styles.container}>

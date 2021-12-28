@@ -3,13 +3,14 @@ import Footer from '@components/Footer'
 import Head from 'next/head'
 import styles from '@styles/Layout.module.css'
 
-export default function Layout({ children, title, description, keywords}) {
+export default function Layout({ children, title, description, keywords }) {
   return (
     <div>
       <Head>
         <title>{title}</title>
         <meta name='description' content={description} />
         <meta name='keywords' content={keywords} />
+        <link rel='icon' href='/favicon.png' />
       </Head>
       <Header />
       <main>{children}</main>
