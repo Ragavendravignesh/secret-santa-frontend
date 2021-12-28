@@ -66,7 +66,7 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
             />
 
-            <input type='submit' value='Login' className={styles.authBtn} />
+            <input type='submit' value='Login' className={styles.authBtn} onClick={handleSubmit}/>
           </form>
         </div>
       </div>

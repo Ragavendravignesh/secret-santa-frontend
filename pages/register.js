@@ -81,7 +81,7 @@ export default function RegisterPage() {
               placeholder='Confirm password'
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
-            <input type='submit' value='Register' className={styles.authBtn} />
+            <input type='submit' value='Register' className={styles.authBtn} onClick={handleSubmit}/>
           </form>
         </div>
       </div>

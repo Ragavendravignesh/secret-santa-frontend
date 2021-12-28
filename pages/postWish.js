@@ -111,7 +111,7 @@ export default function PostWish() {
             />
           </div>
 
-          <input type='submit' className={styles.postWishBtn} value='Submit' />
+          <input type='submit' className={styles.postWishBtn} value='Submit' onClick={handleSubmit}/>
         </form>
       </div>
     </Layout>
